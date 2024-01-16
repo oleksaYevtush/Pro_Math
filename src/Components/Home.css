@@ -1,0 +1,17 @@
+.Typewriter{
+    font-size: 40px;
+    font-weight: bold;
+
+        --tw-text-opacity: 1;
+        color: rgb(93 126 127 / var(--tw-text-opacity)); 
+}
+
+@media only screen and (max-width: 600px) {
+    .Typewriter{
+        font-size: 35px;
+        font-weight: bold;
+    
+            --tw-text-opacity: 1;
+            color: rgb(147 51 234 / var(--tw-text-opacity)); 
+    }
+}

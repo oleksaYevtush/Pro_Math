@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Avdira'; 
+    src: url('../fonts/Avdira.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.menuItem{
+    margin-right: 35px;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 600;
+    color:#f57425b5;
+}
