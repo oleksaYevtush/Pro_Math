@@ -4,7 +4,7 @@ import { AppText } from '../Constants'
 
 const Reviews = () => {
   return (
-    <div id='reviews' className='bg-[#90bab961] p-10'>
+    <div id='reviews' className='bg-[#01adb347] p-10'>
       <div className='flex flex-col items-center justify-center'>
         <SectionHeading firstTitle={AppText.Reviews} secondTitle={AppText.Students} />
 

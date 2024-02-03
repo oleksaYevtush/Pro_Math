@@ -1,18 +1,18 @@
 @font-face {
   font-family: 'Avdira'; 
-  src: url('../src/fonts/Avdira.otf') format('opentype');
+  src: url('../src/assets/fonts/Avdira.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'GardensC'; 
-  src: url('../src/fonts/GardensC.otf') format('opentype'); 
+  src: url('../src/assets/fonts/GardensC.otf') format('opentype'); 
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Geometria_Light'; 
-  src: url('../src/fonts/Geometria_Light.otf') format('opentype'); 
+  src: url('../src/assets/fonts/Geometria_Light.otf') format('opentype'); 
   font-weight: normal;
   font-style: normal;
 }
