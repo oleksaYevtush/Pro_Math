@@ -1,15 +1,13 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { AppText } from './../Constants';
 import './../assets';
-import { homeImage, iconFirst, iconSecond, iconThird, iconFourth, iconFive } from './../assets';
+import { homeImage } from './../assets';
 import './Home.css';
 import Typewriter from 'typewriter-effect';
-import { motion, useAnimation } from 'framer-motion';
+import { useAnimation } from 'framer-motion';
 
 const Home = () => {
   const controls = useAnimation();
-  const iconRef = useRef(null);
-
   useEffect(() => {
     const iconAnimation = () => {
       controls.start({
@@ -22,10 +20,18 @@ const Home = () => {
   }, [controls]);
 
   return (
-    <div className='flex pt-[86px] px-20 md:px-20 justify-between flex-col md:flex-row'>
+    <div className='flex pt-[25px] px-24 md:px-24 justify-between flex-col md:flex-row'>
       <div className='flex flex-row justify-end w-full'>
         <div className='flex flex-col items-start content-end w-full'>
-          <h1 className='text-[35px] md:text-[40px] font-bold '>{AppText.hello}</h1>
+          <div className='shadow-2xl absolute left-0 top-[15px] w-[60px] h-[140px] text-[#f5efef] bg-[#e5915d] rounded-xl text-center'>
+            <p className='text-[15px] font-bold ml-4 mt-5 text-center [writing-mode:vertical-rl]'>ЗАМОВИТИ</p>
+          </div>
+          <div className='shadow-2xl absolute top-[15px] left-[100px] mb-[10px] border-[15px] border-[#00999e] w-[300px] h-[140px] bg-[#e0e0e0] rounded-3xl text-center'>
+            <p className='text-[15px] font-bold mt-4'>МАТЕМАТИКА</p>
+            <p className='text-[25px] uppercase font-bold'>Готові уроки</p>
+            <p className='text-[15px] font-bold'>7 - 9 класи</p>
+          </div>
+          <h1 className='mt-[65px] text-[35px] md:text-[40px] font-bold '>{AppText.hello}</h1>
           <div className='flex'>
             <h1 className='text-[35px]  md:text-[40px] font-bold mr-3'>{AppText.Iam}</h1>
             <Typewriter
@@ -37,12 +43,12 @@ const Home = () => {
             />
           </div>
           <div>
-            <h1 className='my-5 text-[#353d29] font-garden'>
+            <h1 className='my-4 text-[#353d29] font-garden'>
               Математика - це насправді дуже цікаво й корисно. Особливо, якщо наповнити уроки яскравими прикладами. Бо, якщо тема
               зрозуміла, то навчитись розв'язувати прикладні задачі це лише діло практики. До речі, за освітою я економіст-кібернетик
             </h1>
           </div>
-          <button className="relative border hover:border-sky-600 duration-500 group cursor-pointer text-sky-50 overflow-hidden h-14 w-[210px] rounded-md bg-[#007175] p-2 flex justify-center items-center font-extrabold">
+          <button className="shadow-lg mt-2 relative border hover:border-sky-600 duration-500 group cursor-pointer text-sky-50 overflow-hidden h-14 w-[210px] rounded-md bg-[#007175] p-2 flex justify-center items-center font-extrabold">
             <div className="absolute z-10 w-40 h-40 rounded-full group-hover:scale-150 transition-all duration-500 ease-in-out bg-[#00999E] delay-150 group-hover:delay-100"></div>
             <div className="absolute z-10 w-32 h-32 rounded-full group-hover:scale-150 transition-all duration-500 ease-in-out bg-[#00c0c797] delay-150 group-hover:delay-150"></div>
             <div className="absolute z-10 w-24 h-24 rounded-full group-hover:scale-150 transition-all duration-500 ease-in-out bg-[#75afb1] delay-150 group-hover:delay-200"></div>
@@ -51,8 +57,9 @@ const Home = () => {
           </button>
         </div>
       </div>
-      <div className='relative flex justify-center w-full'>
-      <div className='w-[200px] md:w-[300px] rounded-md relative'>
+      <div className='relative flex justify-center items-start w-full'>    
+        <div className='w-[200px] md:w-[300px] rounded-md relative'>
+          {/* Icons Math 
           <motion.img
             ref={iconRef}
             src={iconFive}
@@ -93,9 +100,13 @@ const Home = () => {
             style={{ position: 'absolute', top: '115px', left: '300px', zIndex: '2' }}
             animate={controls}
           />
+          Icons Math */}
           <img src={homeImage} className="object-cover w-full h-full rounded-3xl" alt='home' />
+          <div className="shadow-xl absolute right-[-53px] rounded-3xl text-center w-[430px] py-4 px-6 bg-[#dfeff0]">
+            <p className='leading-4 text-[15px] text-black font-garden'>Математика - це насправді дуже цікаво й корисно. Особливо, якщо наповнити уроки яскравими прикладами. Бо, якщо тема зрозуміла, то навчитись розв'язувати прикладні задачі це лише діло практики. До речі, за освітою я економіст-кібернетик</p>
+          </div>
         </div>
-      </div>
+      </div>   
     </div>
   );
 };

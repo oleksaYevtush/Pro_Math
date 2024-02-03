@@ -6,7 +6,7 @@ const NavBar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <div className="flex items-center justify-between w-full px-20 font-Avdira">
-      <img src={logo} className="h-[70px]" alt="logomath" />
+      <img src={logo} className="mt-2 h-[70px] ml-6" alt="logomath" />
       <div>
         <ul className="hidden md:flex font-avdira">
           <li className="transition-all duration-300 ease-in-out menuItem hover:scale-110 hover:z-50">
