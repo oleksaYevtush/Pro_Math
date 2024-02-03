@@ -42,10 +42,10 @@ const Home = () => {
               зрозуміла, то навчитись розв'язувати прикладні задачі це лише діло практики. До речі, за освітою я економіст-кібернетик
             </h1>
           </div>
-          <button className="relative border hover:border-sky-600 duration-500 group cursor-pointer text-sky-50 overflow-hidden h-14 w-[210px] rounded-md bg-[#5D7E7F] p-2 flex justify-center items-center font-extrabold">
-            <div className="absolute z-10 w-40 h-40 rounded-full group-hover:scale-150 transition-all duration-500 ease-in-out bg-[#ACC7C8] delay-150 group-hover:delay-100"></div>
-            <div className="absolute z-10 w-32 h-32 rounded-full group-hover:scale-150 transition-all duration-500 ease-in-out bg-[#7A9B9C] delay-150 group-hover:delay-150"></div>
-            <div className="absolute z-10 w-24 h-24 rounded-full group-hover:scale-150 transition-all duration-500 ease-in-out bg-[#CBDFE0] delay-150 group-hover:delay-200"></div>
+          <button className="relative border hover:border-sky-600 duration-500 group cursor-pointer text-sky-50 overflow-hidden h-14 w-[210px] rounded-md bg-[#007175] p-2 flex justify-center items-center font-extrabold">
+            <div className="absolute z-10 w-40 h-40 rounded-full group-hover:scale-150 transition-all duration-500 ease-in-out bg-[#00999E] delay-150 group-hover:delay-100"></div>
+            <div className="absolute z-10 w-32 h-32 rounded-full group-hover:scale-150 transition-all duration-500 ease-in-out bg-[#00c0c797] delay-150 group-hover:delay-150"></div>
+            <div className="absolute z-10 w-24 h-24 rounded-full group-hover:scale-150 transition-all duration-500 ease-in-out bg-[#75afb1] delay-150 group-hover:delay-200"></div>
             <div className="absolute z-10 w-16 h-16 rounded-full group-hover:scale-150 transition-all duration-500 ease-in-out bg-[#dfeff0] delay-150 group-hover:delay-300"></div>
             <p className="z-10 text-[#353d29]">УРОКИ</p>
           </button>
