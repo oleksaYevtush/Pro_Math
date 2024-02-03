@@ -11,7 +11,7 @@ const AboutMe = () => {
       <div
         className='relative items-center justify-center w-full'
         style={{ backgroundImage: `url(${wave})`, backgroundSize: 'cover', height: '350px', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
-        <h1 className='font-avdira text-[#353d29] text-[50px] pt-[20px] font-bold text-center'>Про <span className='text-[#f57425b5]'>Meне</span></h1>
+        <h1 className='font-avdira text-[#353d29] text-[50px] pt-[20px] font-bold text-center'>Як це <span className='text-[#f57425b5]'>Працює</span></h1>
         <p className='w-full px-10 md:px-32 lg:px-30 mt-[35px] mb-[25px] text-[#353d29e8] font-garden'>{AppText.aboutMeDescripion} </p>
       </div>
       <div className='flex flex-col md:flex-row mt-[105px] md:px-32 '>
