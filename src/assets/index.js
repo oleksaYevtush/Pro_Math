@@ -6,6 +6,7 @@ import iconThird from './iconthree.png'
 import iconFourth from './iconfour.png'
 import iconFive from './iconfive.png'
 
+import click from './click.gif'
 import hero from './hero.jpg'
 import skill from './skill.png'
 import alg from './alg.jpg'
@@ -18,7 +19,7 @@ import girllaptop from './girllaptop.png'
 
 export {
     logo,contactusbg,girllaptop,
-    homeImage,
+    homeImage, click, 
     iconFirst, iconSecond, iconThird, iconFourth, iconFive,
     alg,
     hero,

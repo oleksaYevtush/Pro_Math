@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { AppText } from './../Constants';
 import './../assets';
 import { homeImage } from './../assets';
+import { click } from './../assets';
 import './Home.css';
 import Typewriter from 'typewriter-effect';
 import { useAnimation } from 'framer-motion';
@@ -20,7 +21,7 @@ const Home = () => {
   }, [controls]);
 
   return (
-    <div className='flex pt-[25px] px-24 md:px-24 justify-between flex-col md:flex-row'>
+    <div className='flex pt-[25px] pl-24 md:pl-24 justify-between flex-col md:flex-row'>
       <div className='flex flex-row justify-end w-full'>
         <div className='flex flex-col items-start content-end w-full'>
           <div className='shadow-2xl absolute left-0 top-[15px] w-[60px] h-[140px] text-[#f5efef] bg-[#e5915d] rounded-xl text-center'>
@@ -31,6 +32,12 @@ const Home = () => {
             <p className='text-[25px] uppercase font-bold'>Готові уроки</p>
             <p className='text-[15px] font-bold'>7 - 9 класи</p>
           </div>
+          <img
+            src={click} 
+            alt="Click"
+            className="object-cover w-[40px] rounded-3xl"
+            style={{ transform: 'rotate(-45deg)', position: 'absolute', top: '105px', left: '330px', zIndex: '3' }}
+          />
           <h1 className='mt-[65px] text-[35px] md:text-[40px] font-bold '>{AppText.hello}</h1>
           <div className='flex'>
             <h1 className='text-[35px]  md:text-[40px] font-bold mr-3'>{AppText.Iam}</h1>
@@ -57,7 +64,7 @@ const Home = () => {
           </button>
         </div>
       </div>
-      <div className='relative flex justify-center items-start w-full'>    
+      <div className='relative flex items-start justify-center w-full'>    
         <div className='w-[200px] md:w-[300px] rounded-md relative'>
           {/* Icons Math 
           <motion.img
@@ -105,6 +112,7 @@ const Home = () => {
           <div className="shadow-xl absolute right-[-53px] rounded-3xl text-center w-[430px] py-4 px-6 bg-[#dfeff0]">
             <p className='leading-4 text-[15px] text-black font-garden'>Математика - це насправді дуже цікаво й корисно. Особливо, якщо наповнити уроки яскравими прикладами. Бо, якщо тема зрозуміла, то навчитись розв'язувати прикладні задачі це лише діло практики. До речі, за освітою я економіст-кібернетик</p>
           </div>
+          
         </div>
       </div>   
     </div>
