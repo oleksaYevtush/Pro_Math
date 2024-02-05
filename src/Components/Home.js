@@ -50,12 +50,16 @@ const Home = () => {
             />
           </div>
           <div>
+            <h1 className="leading-6 text-[18px] text-black font-garden">Тут ви знайдете <span className="text-[#00999e]">Розробки уроків для викладачів та учнів</span></h1>
+            <p className="leading-6 text-[18px] text-black font-garden">Бракує часу чи навичок для створення цікавих та доступних уроків з математики? Запрошую вас відкрити світ готових математичних уроків!</p>
+            {/* Math
             <h1 className='my-4 text-[#353d29] font-garden'>
               Математика - це насправді дуже цікаво й корисно. Особливо, якщо наповнити уроки яскравими прикладами. Бо, якщо тема
               зрозуміла, то навчитись розв'язувати прикладні задачі це лише діло практики. До речі, за освітою я економіст-кібернетик
             </h1>
+            Math */}
           </div>
-          <button className="shadow-lg mt-2 relative border hover:border-sky-600 duration-500 group cursor-pointer text-sky-50 overflow-hidden h-14 w-[210px] rounded-md bg-[#007175] p-2 flex justify-center items-center font-extrabold">
+          <button className="shadow-lg mt-[35px] relative border hover:border-sky-600 duration-500 group cursor-pointer text-sky-50 overflow-hidden h-14 w-[210px] rounded-md bg-[#007175] p-2 flex justify-center items-center font-extrabold">
             <div className="absolute z-10 w-40 h-40 rounded-full group-hover:scale-150 transition-all duration-500 ease-in-out bg-[#00999E] delay-150 group-hover:delay-100"></div>
             <div className="absolute z-10 w-32 h-32 rounded-full group-hover:scale-150 transition-all duration-500 ease-in-out bg-[#00c0c797] delay-150 group-hover:delay-150"></div>
             <div className="absolute z-10 w-24 h-24 rounded-full group-hover:scale-150 transition-all duration-500 ease-in-out bg-[#75afb1] delay-150 group-hover:delay-200"></div>

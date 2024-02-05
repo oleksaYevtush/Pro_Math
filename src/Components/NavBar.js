@@ -16,7 +16,7 @@ const NavBar = () => {
             <a href="/#aboutme">Про Мене</a>
           </li>
           <li className="menuItem hover:scale-110">
-            <a href="/#education">Освіта</a>
+            <a href="/#education">Уроки</a>
           </li>
           <li className="menuItem hover:scale-110">
             <a href="/#reviews">Відгуки</a>
