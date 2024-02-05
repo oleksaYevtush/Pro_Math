@@ -3,7 +3,6 @@ import { AppText, lessons } from '../Constants'
 import SectionHeading from '../Shared/SectionHeading';
 import {note} from '../assets/index'
 
-
 const Lessons = () => {
     const [selectedFilters, setSelectedFilters] = useState([]);
   
@@ -22,14 +21,11 @@ const Lessons = () => {
       const filteredLessons = lessons.filter((lesson) => {
         return selectedFilters.length === 0 || (lesson.types && selectedFilters.some(filter => lesson.types.includes(filter)));
 
-
       });
       
-      
-
   return (
     <div className='flex flex-col justify-center mt-5'>
-        <div className='font-avdira flex flex-row items-center justify-center px-6 md:px-0'>
+        <div className='flex flex-row items-center justify-center px-6 font-avdira md:px-0'>
         <SectionHeading firstTitle={AppText.Educ} secondTitle={AppText.Materials} />
         <img src={note} className="w-[100px] ml-5 animate-bounce" alt='logop'/>
         </div>
